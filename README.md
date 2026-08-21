@@ -1,11 +1,9 @@
-# BANBANBANActúa como un Arquitecto Senior experto en Oracle APEX, PL/SQL y diseño de UI/UX. Necesito construir un dashboard de monitoreo dinámico, altamente visual y moderno en APEX, utilizando el Universal Theme.
+Tengo una página de dashboard con un KPI principal de '83 cases' y un gráfico de área apilada de 'Tendencia de validaciones'. Dame el paso a paso exacto en el Page Designer y el código SQL/configuración necesarios para lograr lo siguiente:
 
-Dame el paso a paso exacto en el Page Designer y el código SQL/HTML/CSS necesario para implementar la siguiente estructura en una sola página:
+Reducir el Gráfico: En la región 'Tendencia de Validaciones', indícame qué propiedad de altura del gráfico debo modificar en el Page Designer (ej. a '200px') para que sea más pequeño y compacte la vista.
 
-Fila Superior (KPIs Avanzados): Una región de tipo 'Cards'. Necesito un query SQL de ejemplo utilizando sintaxis con la cláusula WITH (para datos de prueba) y el código exacto para el atributo 'HTML Expression'. Esta tarjeta debe mostrar el total de 'Casos que detienen cierre' en un número grande destacado en rojo, e incluir una pequeña barra de progreso o desglose en el mismo cuerpo de la tarjeta.
+Nueva Tabla Detallada (83 Casos): Crea una nueva región de tipo 'Interactive Report' (o 'Interactive Grid') directamente debajo del gráfico reducido. Título de la región: 'Detalle de Casos que Requieren Atención Inmediata (83)'.
 
-Fila Central (Gráfico en Tiempo Real): Una región de tipo 'Chart' de área apilada. Explícame dónde configurar exactamente el 'Refresh Interval' (ej. 30 segundos) en las propiedades de la región para que sea dinámico. Además, dame el query SQL que simule una tendencia de tiempo agrupando validaciones (Exitosas vs. Fallidas) por minuto durante la última hora.
+Configuración de la Tabla: Dame el código SQL de ejemplo para este reporte con las columnas: 'Caso ID', 'Tipo de Error', 'Descripción', 'Estado', 'Asignado a'. Configura los encabezados para que sean legibles y presentables.
 
-Fila Inferior (Detalle Operativo): Una región de tipo 'Interactive Report' o 'Interactive Grid'. Proporcióname un query SQL de ejemplo con el detalle de los casos. Incluye la instrucción de cómo configurar la columna del ID del caso para que actúe como un hipervínculo que redirija a una página modal de edición.
-
-Tu respuesta debe ser altamente técnica, omitir explicaciones básicas de qué es APEX, e ir directamente a las propiedades a modificar en el Page Designer y los bloques de código.
+Tu respuesta debe ser altamente técnica, detallando propiedades específicas del Page Designer y bloques de código PL/SQL/SQL."
