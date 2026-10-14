@@ -1,7 +1,15 @@
-Experto en Oracle APEX y PL/SQL: Tengo la tabla 'APX_CV_TRACKING_PROCESOS' (columnas: id_tracking, id_referencia, paso, estado, fecha_registro). Quiero generar un diagrama de flujo dinámico con Mermaid.js basado en la secuencia histórica de un proceso.
-​Dame el código exacto para una región de 'PL/SQL Dynamic Content' en APEX. El código debe:
-​Imprimir <div class="mermaid"> graph LR;
-​Usar un cursor con la función analítica LEAD(paso) OVER (ORDER BY id_tracking) para obtener el 'siguiente_paso' filtrando por :P1_ID_REFERENCIA.
-​Imprimir las conexiones (ej: paso --> siguiente_paso).
-​Aplicar estilos a los nodos según su 'estado' (OK = verde, ERROR = rojo, PROCESANDO = amarillo).
-​Dame solo el código PL/SQL (con HTP.P) y la URL del CDN de Mermaid para poner en las propiedades de la página."
+Experto en Oracle APEX: Necesito un maestro-detalle con una región 'Tree' a la izquierda y mi diagrama a la derecha. Mi tabla plana es
+
+APX CV TRACKING PROCESOS.
+
+1.
+
+2.
+
+3.
+
+Tree SQL: Dame la consulta exacta para la región Tree (status, level, title, icon, value, tooltip, link). Usa un 'UNION ALL' para crear 2 niveles: Nivel 1 (Padres) = DISTINCT 'TIPO_PROCESO'. Nivel 2 (Hijos) = 'PASO' u 'OBJETO'. Filtra todo por ':P1 ID REFERENCIA'.
+
+Layout: Indica cómo poner el Tree en Column Span 3 y la región del diagrama en Column Span 9 (Universal Theme).
+
+Eventos: Dime cómo configurar el nodo del árbol para que, al hacer clic, asigne su 'value' a un Page Item oculto (ej. :P1_NODO_SELECCIONADO) y dispare un 'Refresh' de la región del diagrama
